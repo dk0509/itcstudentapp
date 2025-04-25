@@ -7,7 +7,7 @@ function Registration() {
     const email=e.target.email.value;
     const password=e.target.password.value;
     alert(name+email+password);
-        const response=await fetch("https://itcstudentapp-backend-8dfm.onrender.com",{
+        const response=await fetch("https://itcstudentapp-backend-8dfm.onrender.com/register",{
           method:'POST',
           body:JSON.stringify({name,email,password}),
           headers:{'Content-Type':'application/json'}
